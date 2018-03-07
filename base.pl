@@ -72,6 +72,15 @@ antepassado(X,Y) :-
 	antepassado(Z,Y).
 
 
+% somar
 
+somar(X,Y,Z) :-
+	Z is X + Y.
 
+somar2(X,Y) :-
+	Z is X + Y,
+	write(Z). 
 
+entrada :-
+	read(X), read(Y),
+	somar2(X,Y).
