@@ -84,3 +84,17 @@ somar2(X,Y) :-
 entrada :-
 	read(X), read(Y),
 	somar2(X,Y).
+
+
+% Regra para mostrar os números de 0 ate 10
+
+mostrar(0) :-
+	write('0'),
+	!.
+
+% Regra recursiva
+mostrar(X) :-
+	write(X),
+	nl,
+	Xi is X - 1,
+	mostrar(Xi).
